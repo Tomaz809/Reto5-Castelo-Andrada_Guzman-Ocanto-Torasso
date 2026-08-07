@@ -4,89 +4,144 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tienda - Inicio</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="estilos.css">
     <script src="https://cdn.tailwindcss.com"></script>
 </head>
-<body class="bg-gray-100">
+<body>
 
-    <header class="main-header">
-        <div class="logo">
-            <img src="placeholder-logo.png" alt="Logotipo Producto">
-        </div>
-        <nav class="main-nav">
-            <ul>
-                <li><a href="index.html">Inicio</a></li>
-                <li><a href="#productos">Productos</a></li>
-                <li><a href="#">Contacto</a></li>
-            </ul>
-        </nav>
-    </header>
+<header class="bg-green-500 flex justify-between items-end p-8">
+  <!--logo y nombre -->
+  <div class="flex item-center gap-x-8">
+    <!-- Logo circular -->
+    <div class="w-15 h-15 bg-white rounded-full flex items-center justify-center text-black">Logo
+      <img src="" alt="">
+    </div>
+    <!-- Nombre del sitio -->
+    <h1 class="text-2xl flex items-center">Nombre WEB</h1>
+  </div>
+  <!-- Botón de menú -->
+  <button class="text-2xl font-semibold text-black-500 hover:bg-white/5 hover:text-white">Menu</button>
+</header>
 
-    <section class="hero-section">
-        <img src="placeholder-hero.jpg" alt="Portada Destacada del Producto" class="hero-image">
-    </section>
+<!-- Hero Section -->
+<section class="bg-white py-16 px-8 flex flex-col items-center text-center gap-8">
+  <!-- Título de bienvenida -->
+  <h1 class="text-4xl font-bold text-gray-900">
+    Texto bienvenida
+  </h1>
+  <!-- Imagen introductoria -->
+  <div class="w-80 h-48 bg-yellow-100 flex items-center justify-center">
+    <span class="text-yellow-700 font-semibold">imagen introductoria</span>
+  </div>
 
     <main class="content-body">
         <section class="intro-section">
             <h1>Explorá nuestra última colección</h1>
             <p>Acá va el párrafo introductorio. Podés describir brevemente de qué se trata la tienda, la calidad de los productos o el lanzamiento actual.</p>
         </section>
-        <h2 class="text-gray-500 text-m mt-1 text-center">Productos destacados</h2>
-        <section id="productos" class="grid grid-cols-1 md:grid-cols-3 gap-p gap-6 px-6 py-10">
-            
-            <article class="bg-green-500 rounded-lg shadow p-4 hover:shadow-x1 transition">
-                <img src="placeholder-prod1.jpg" alt="Producto 1" class="w-full rounded mb-4 object-cover h-48">
-                <h3 class="text-lg font-bold text-gray-800">Producto 1</h3>
-                <p class="text-gray-500 text-sm mt-1">Descripción corta del producto 1 para atraer al usuario.</p>
-                <span class="block text-blue-600 font-bold text-x1 mt-3">$9.999</span>
-                <a href="detalle-producto.html" class="mt-4 bg-blue-500 hover:bg-blue-700 text-center py-2 rounded transition">Ver detalle</a>
-            </article>
 
-            <article class="bg-green-500 rounded-lg shadow p-4 hover:shadow-x1 transition">
-                <img src="placeholder-prod2.jpg" alt="Producto 2" class="w-full rounded mb-4 object-cover h-48">
-                <h3>Producto 2</h3>
-                <p>Descripción corta del producto 2 para atraer al usuario.</p>
-                <span class="block text-blue-600 font-center py-2 rounded transition">$12.500</span>
-                <a href="detalle-producto.html" class="mt-4 bg-blue-500 hover:bg-blue-700 text-center py-2 rounded transition">Ver detalle</a>
-            </article>
+  <div class="inline-block bg-white rounded-2xl shadow-md p-5 flex ">
 
-            <article class="bg-green-500 rounded-lg shadow p-4 hover:shadow-x1 transition">
-                <img src="placeholder-prod3.jpg" alt="Producto 3" class="w-full rounded mb-4 object-cover h-48">
-                <h3>Producto 3</h3>
-                <p>Descripción corta del producto 3 para atraer al usuario.</p>
-                <span class="price">$8.400</span>
-                <a href="detalle-producto.html" class="mt-4 bg-blue-500 hover:bg-blue-700 text-center py-2 rounded transition">Ver detalle</a>
-            </article>
+    <!-- Título -->
+    <h2 class="text-gray-400 text-sm text-center pt-5 pb-1 tracking-wide uppercase">Productos destacados</h2>
 
-            <article class="bg-green-500 rounded-lg shadow p-4 hover:shadow-x1 transition">
-                <img src="placeholder-prod3.jpg" alt="Producto 4" class="w-full rounded mb-4 object-cover h-48">
-                <h3>Producto 4</h3>
-                <p>Descripción corta del producto 4 para atraer al usuario.</p>
-                <span class="price">$8.400</span>
-                <a href="detalle-producto.html" class="mt-4 bg-blue-500 hover:bg-blue-700 text-center py-2 rounded transition">Ver detalle</a>
-            </article>
+    <!-- Contenedor principal -->
+    <div class="flex flex-col md:flex-row gap-10">
 
-            <article class="bg-green-500 rounded-lg shadow p-4 hover:shadow-x1 transition">
-                <img src="placeholder-prod3.jpg" alt="Producto 5" class="w-full rounded mb-4 object-cover h-48">
-                <h3>Producto 5</h3>
-                <p>Descripción corta del producto 5 para atraer al usuario.</p>
-                <span class="price">$8.400</span>
+      <!-- Grupo Hamburguesas -->
+      <div>
+        <h3 class="text-lg font-semibold text-blue-800 mb-3">Hamburguesas</h3>
+        <div class="flex flex-col gap-3">
+          <details class="group border rounded-xl bg-white hover:bg-gray-50 transition-all">
+            <summary class="flex items-center gap-3 p-3 cursor-pointer">
+              <span class="text-3xl">🍔</span>
+              <div class="flex-1">
+                <p class="text-sm font-medium text-gray-800">Doble con papas</p>
+                <p class="text-sm text-blue-500 font-semibold">$17.499</p>
+              </div>
+            </summary>
+            <div class="px-5 pb-4 flex flex-col gap-3 text-sm text-gray-600">
+              <p>Pan de papa, dos medallones de carne de 100 gr, queso cheddar, toppings a elección y papas fritas.</p>
+              <ul class="flex flex-col gap-1.5">
+                <li>🧂 Toppings a elección</li>
+                <li>🔥 Carne 100% vacuna</li>
+              </ul>
                 <a href="detalle-producto.html" class="mt-4 bg-blue-500 hover:bg-blue-700 text-center py-2 rounded transition">Ver detalle</a>
-            </article>
+            </div>
+          </details>
 
-            <article class="bg-green-500 rounded-lg shadow p-4 hover:shadow-x1 transition">
-                <img src="placeholder-prod6.jpg" alt="Producto 6" class="w-full rounded mb-4 object-cover h-48">
-                <h3>Producto 6</h3>
-                <p>Descripción corta del producto 6 para atraer al usuario.</p>
-                <span class="price">$8.400</span>
-                <a href="detalle-producto.html" class="mt-4 bg-blue-500 hover:bg-blue-700 text-center py-2 rounded transition">Ver detalle</a>
-            </article>
-        </section>
+          <details class="group border rounded-xl bg-white hover:bg-gray-50 transition-all">
+            <summary class="flex items-center gap-3 p-3 cursor-pointer">
+              <span class="text-3xl">🍔</span>
+              <div class="flex-1">
+                <p class="text-sm font-medium text-gray-800">Triple con papas</p>
+                <p class="text-sm text-blue-500 font-semibold">$21.499</p>
+              </div>
+            </summary>
+            <div class="px-5 pb-4 text-sm text-gray-600">
+              <p>Pan de papa, tres medallones de carne de 100 gr, queso cheddar, toppings a elección y papas fritas.</p>
+              <ul class="flex flex-col gap-1.5">
+                <li>🧂 Toppings a elección</li>
+                <li>🔥 300 gr de carne total</li>
+                <li>⭐ La más popular</li>
+              </ul>
+              <button class="bg-red-500 rounded-lg shadow p-2 hover:bg-red-600 cta-button">Comprar</button>
+            </div>
+          </details>
+        </div>
+      </div>
 
-        <section class="cta-section">
-            <button class="bg-red-500 rounded-lg shadow p-2 hover:bg-red-700 cta-button">¡Comprá Ahora con Descuento!</button>
-        </section>
-    </main>
+      <!-- Grupo Lomitos -->
+      <div>
+        <h3 class="text-lg font-semibold text-green-800 mb-3">Lomitos</h3>
+        <div class="flex flex-col gap-3">
+          <details class="group border rounded-xl bg-white hover:bg-gray-50 transition-all">
+            <summary class="flex items-center gap-3 p-3 cursor-pointer">
+              <span class="text-3xl">🥩</span>
+              <div class="flex-1">
+                <p class="text-sm font-medium text-gray-800">Lomito completo</p>
+                <p class="text-sm text-blue-500 font-semibold">$18.999</p>
+              </div>
+            </summary>
+            <div class="px-5 pb-4 text-sm text-gray-600">
+              <p>Pan de viena, lomo tierno, jamón, queso, lechuga, tomate, huevo frito y mayonesa.</p>
+              <ul class="flex flex-col gap-1.5">
+                <li>🍳 Con huevo frito</li>
+                <li>🥬 Verduras frescas</li>
+              </ul>
+              <button class="bg-red-500 rounded-lg shadow p-2 hover:bg-red-600 cta-button">Comprar</button>
+            </div>
+          </details>
+        </div>
+      </div>
+
+      <!-- Grupo Snacks -->
+      <div>
+        <h3 class="text-lg font-semibold text-amber-800 mb-3">Snacks</h3>
+        <div class="flex flex-col gap-3">
+          <details class="group border rounded-xl bg-white hover:bg-gray-50 transition-all">
+            <summary class="flex items-center gap-3 p-3 cursor-pointer">
+              <span class="text-3xl">🍟</span>
+              <div class="flex-1">
+                <p class="text-sm font-medium text-gray-800">Papas fritas</p>
+                <p class="text-sm text-blue-500 font-semibold">$6.999</p>
+              </div>
+            </summary>
+            <div class="px-5 pb-4 text-sm text-gray-600">
+              <p>Papas fritas caseras crujientes, condimentadas con sal y especias.</p>
+              <ul class="flex flex-col gap-1.5">
+                <li>🧂 Condimentadas al gusto</li>
+              </ul>
+              <button class="bg-red-500 rounded-lg shadow p-2 hover:bg-red-600 cta-button">Comprar</button>
+            </div>
+          </details>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+</main>
 
     <footer class="main-footer">
         <p>&copy; 2026 Nombre de la Tienda. Todos los derechos reservados.</p>
