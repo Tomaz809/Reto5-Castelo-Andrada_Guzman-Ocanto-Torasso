@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tienda - Detalle del producto</title>
+
+    <!-- Fomantic UI -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/fomantic-ui@2.9.4/dist/semantic.min.css">
+
+    <!-- CSS propio -->
+    <link rel="stylesheet" href="css/estilos.css">
+
+    <!-- jQuery + Fomantic UI -->
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.7.1/dist/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/fomantic-ui@2.9.4/dist/semantic.min.js"></script>
+</head>
+
+<body>
+
+    <main class="ui container" style="padding-top: 2rem; padding-bottom: 2rem;">
+
+        <!-- Grilla de Fomantic UI equivalente a grid grid-cols-1 md:grid-cols-2 -->
+        <div class="ui stackable two column grid">
+
+            <!-- Imagen -->
+            <div class="column">
+                <img
+                    src="/version-con-tailwind/img/cheeseburger.png"
+                    alt="Producto"
+                    class="ui fluid rounded image">
+            </div>
+
+            <!-- Información -->
+            <div class="column">
+
+                <h2 class="ui huge header">
+                    Cheeseburger
+                </h2>
+
+                <p class="ui huge header">
+                    $9.999
+                </p>
+
+                <p class="ui large text">
+                    Medallón de carne vacuna (100 grs), 2 fetas de cheddar,
+                    cebolla natural &amp; salsa Tec! (Incluye porción de papas fritas).
+                </p>
+
+                <h3 class="ui large header" style="margin-top: 2rem;">
+                    Personalizá tu hamburguesa
+                </h3>
+
+                <!-- Caja de personalización -->
+                <div class="ui segment">
+
+                    <h4 class="ui medium header">
+                        Extras
+                    </h4>
+
+                    <div class="ui relaxed list">
+
+                        <div class="item">
+                            <div class="ui checkbox">
+                                <input type="checkbox">
+                                <label>Extra cheddar</label>
+                            </div>
+
+                            <span class="right floated">
+                                +$1000
+                            </span>
+                        </div>
+
+                        <div class="item">
+                            <div class="ui checkbox">
+                                <input type="checkbox">
+                                <label>Panceta</label>
+                            </div>
+
+                            <span class="right floated">
+                                +$1500
+                            </span>
+                        </div>
+
+                        <div class="item">
+                            <div class="ui checkbox">
+                                <input type="checkbox">
+                                <label>Medallón extra</label>
+                            </div>
+
+                            <span class="right floated">
+                                +$2500
+                            </span>
+                        </div>
+
+                    </div>
+
+                    <h4 class="ui medium header" style="margin-top: 2rem;">
+                        Quitar ingredientes
+                    </h4>
+
+                    <div class="ui relaxed list">
+
+                        <div class="item">
+                            <div class="ui checkbox">
+                                <input type="checkbox">
+                                <label>Sin cebolla</label>
+                            </div>
+                        </div>
+
+                        <div class="item">
+                            <div class="ui checkbox">
+                                <input type="checkbox">
+                                <label>Sin cheddar</label>
+                            </div>
+                        </div>
+
+                        <div class="item">
+                            <div class="ui checkbox">
+                                <input type="checkbox">
+                                <label>Sin salsa especial</label>
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <!-- Botones -->
+                <button class="ui green button">
+                    Comprar ahora
+                </button>
+
+                <a
+                    href="index.html"
+                    class="ui grey button">
+                    Volver
+                </a>
+
+            </div>
+
+        </div>
+
+    </main>
+
+    <footer class="main-footer">
+        <p>
+            &copy; 2026 Nombre de la Tienda. Todos los derechos reservados.
+        </p>
+    </footer>
+
+    <script>
+        $('.ui.checkbox').checkbox();
+    </script>
+
+</body>
+</html>
