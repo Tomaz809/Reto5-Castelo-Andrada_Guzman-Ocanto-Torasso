@@ -40,106 +40,118 @@
             <p>Acá va el párrafo introductorio. Podés describir brevemente de qué se trata la tienda, la calidad de los productos o el lanzamiento actual.</p>
         </section>
 
-  <div class="inline-block bg-white rounded-2xl shadow-md p-5 flex ">
+<!-- Contenedor principal -->
+<div class="inline-block bg-white rounded-2xl shadow-md p-5">
 
-    <!-- Título -->
-    <h2 class="text-gray-400 text-sm text-center pt-5 pb-1 tracking-wide uppercase">Productos destacados</h2>
+  <!-- Título general -->
+  <h2 class="text-gray-400 text-sm text-center pt-5 pb-5 tracking-wide uppercase">
+    Productos destacados
+  </h2>
 
-    <!-- Contenedor principal -->
-    <div class="flex flex-col md:flex-row gap-10">
+  <!-- Contenedor de categorías -->
+  <div class="flex flex-col gap-10">
 
-      <!-- Grupo Hamburguesas -->
-      <div>
-        <h3 class="text-lg font-semibold text-blue-800 mb-3">Hamburguesas</h3>
-        <div class="flex flex-col gap-3">
-          <details class="group border rounded-xl bg-white hover:bg-gray-50 transition-all">
-            <summary class="flex items-center gap-3 p-3 cursor-pointer">
-              <span class="text-3xl">🍔</span>
-              <div class="flex-1">
-                <p class="text-sm font-medium text-gray-800">Doble con papas</p>
-                <p class="text-sm text-blue-500 font-semibold">$17.499</p>
-              </div>
-            </summary>
-            <div class="px-5 pb-4 flex flex-col gap-3 text-sm text-gray-600">
-              <p>Pan de papa, dos medallones de carne de 100 gr, queso cheddar, toppings a elección y papas fritas.</p>
-              <ul class="flex flex-col gap-1.5">
-                <li>🧂 Toppings a elección</li>
-                <li>🔥 Carne 100% vacuna</li>
-              </ul>
-                <a href="detalle-producto.html" class="mt-4 bg-blue-500 hover:bg-blue-700 text-center py-2 rounded transition">Ver detalle</a>
-            </div>
-          </details>
+    <!-- Hamburguesas -->
+    <div>
+      <h3 class="text-lg font-semibold text-blue-800 mb-3 text-center">Hamburguesas</h3>
+      <div class="flex flex-row gap-3 justify-center">
 
-          <details class="group border rounded-xl bg-white hover:bg-gray-50 transition-all">
-            <summary class="flex items-center gap-3 p-3 cursor-pointer">
-              <span class="text-3xl">🍔</span>
-              <div class="flex-1">
-                <p class="text-sm font-medium text-gray-800">Triple con papas</p>
-                <p class="text-sm text-blue-500 font-semibold">$21.499</p>
-              </div>
-            </summary>
-            <div class="px-5 pb-4 text-sm text-gray-600">
-              <p>Pan de papa, tres medallones de carne de 100 gr, queso cheddar, toppings a elección y papas fritas.</p>
-              <ul class="flex flex-col gap-1.5">
-                <li>🧂 Toppings a elección</li>
-                <li>🔥 300 gr de carne total</li>
-                <li>⭐ La más popular</li>
-              </ul>
-              <button class="bg-red-500 rounded-lg shadow p-2 hover:bg-red-600 cta-button">Comprar</button>
-            </div>
-          </details>
-        </div>
+        <!-- Doble con papas -->
+        <details class="group border rounded-xl bg-white hover:bg-gray-50 transition-all w-48">
+          <summary class="flex flex-col items-center p-3 cursor-pointer">
+            <a href="detalle-producto.html" target="_blank">
+              <img src="/version-con-tailwind/img/cheeseburger.png" alt="Hamburguesa doble">
+            </a>
+            <p class="text-sm font-medium text-gray-800 mt-2">Doble con papas</p>
+            <p class="text-sm text-blue-500 font-semibold">$17.499</p>
+          </summary>
+        </details>
+
+        <!-- Triple con papas -->
+        <details class="group border rounded-xl bg-white hover:bg-gray-50 transition-all w-48">
+          <summary class="flex flex-col items-center p-3 cursor-pointer">
+            <a href="poner link del detalle del producto" target="_blank">
+              <img src="/version-con-tailwind/img/tripleburger.png" alt="Hamburguesa triple">
+            </a>
+            <p class="text-sm font-medium text-gray-800 mt-2">Triple con papas</p>
+            <p class="text-sm text-blue-500 font-semibold">$21.499</p>
+          </summary>
+        </details>
+
+        <!-- Veggie -->
+        <details class="group border rounded-xl bg-white hover:bg-gray-50 transition-all w-48">
+          <summary class="flex flex-col items-center p-3 cursor-pointer">
+            <a href="poner link del detalle del producto" target="_blank">
+              <img src="/version-con-tailwind/img/veggieburger.png" alt="Hamburguesa veggie">
+            </a>
+            <p class="text-sm font-medium text-gray-800 mt-2">Veggie con papas</p>
+            <p class="text-sm text-blue-500 font-semibold">$18.999</p>
+          </summary>
+        </details>
+
+        <!-- Pollo crispy -->
+        <details class="group border rounded-xl bg-white hover:bg-gray-50 transition-all w-48">
+          <summary class="flex flex-col items-center p-3 cursor-pointer">
+            <a href="poner link del detalle del producto" target="_blank">
+              <img src="/version-con-tailwind/img/chickenburger.png" alt="Hamburguesa de pollo">
+            </a>
+            <p class="text-sm font-medium text-gray-800 mt-2">Pollo crispy con papas</p>
+            <p class="text-sm text-blue-500 font-semibold">$19.499</p>
+          </summary>
+        </details>
+
       </div>
+    </div>
 
-      <!-- Grupo Lomitos -->
-      <div>
-        <h3 class="text-lg font-semibold text-green-800 mb-3">Lomitos</h3>
-        <div class="flex flex-col gap-3">
-          <details class="group border rounded-xl bg-white hover:bg-gray-50 transition-all">
-            <summary class="flex items-center gap-3 p-3 cursor-pointer">
-              <span class="text-3xl">🥩</span>
-              <div class="flex-1">
-                <p class="text-sm font-medium text-gray-800">Lomito completo</p>
-                <p class="text-sm text-blue-500 font-semibold">$18.999</p>
-              </div>
-            </summary>
-            <div class="px-5 pb-4 text-sm text-gray-600">
-              <p>Pan de viena, lomo tierno, jamón, queso, lechuga, tomate, huevo frito y mayonesa.</p>
-              <ul class="flex flex-col gap-1.5">
-                <li>🍳 Con huevo frito</li>
-                <li>🥬 Verduras frescas</li>
-              </ul>
-              <button class="bg-red-500 rounded-lg shadow p-2 hover:bg-red-600 cta-button">Comprar</button>
-            </div>
-          </details>
-        </div>
+    <!-- Lomitos -->
+    <div>
+      <h3 class="text-lg font-semibold text-green-800 mb-3 text-center">Lomitos</h3>
+      <div class="flex flex-row gap-3 justify-center">
+
+        <!-- Lomito completo -->
+        <details class="group border rounded-xl bg-white hover:bg-gray-50 transition-all w-48">
+          <summary class="flex flex-col items-center p-3 cursor-pointer">
+            <a href="poner link del detalle del producto" target="_blank">
+              <img src="/version-con-tailwind/img/lomitocompleto.png" alt="Lomito completo">
+            </a>
+            <p class="text-sm font-medium text-gray-800 mt-2">Lomito completo</p>
+            <p class="text-sm text-blue-500 font-semibold">$18.999</p>
+          </summary>
+        </details>
+
+        <!-- Lomito clásico -->
+        <details class="group border rounded-xl bg-white hover:bg-gray-50 transition-all w-48">
+          <summary class="flex flex-col items-center p-3 cursor-pointer">
+            <a href="poner link del detalle del producto" target="_blank">
+              <img src="/version-con-tailwind/img/lomito.png" alt="Lomito clásico">
+            </a>
+            <p class="text-sm font-medium text-gray-800 mt-2">Lomito clásico</p>
+            <p class="text-sm text-blue-500 font-semibold">$19.999</p>
+          </summary>
+        </details>
+
       </div>
+    </div>
 
-      <!-- Grupo Snacks -->
-      <div>
-        <h3 class="text-lg font-semibold text-amber-800 mb-3">Snacks</h3>
-        <div class="flex flex-col gap-3">
-          <details class="group border rounded-xl bg-white hover:bg-gray-50 transition-all">
-            <summary class="flex items-center gap-3 p-3 cursor-pointer">
-              <span class="text-3xl">🍟</span>
-              <div class="flex-1">
-                <p class="text-sm font-medium text-gray-800">Papas fritas</p>
-                <p class="text-sm text-blue-500 font-semibold">$6.999</p>
-              </div>
-            </summary>
-            <div class="px-5 pb-4 text-sm text-gray-600">
-              <p>Papas fritas caseras crujientes, condimentadas con sal y especias.</p>
-              <ul class="flex flex-col gap-1.5">
-                <li>🧂 Condimentadas al gusto</li>
-              </ul>
-              <button class="bg-red-500 rounded-lg shadow p-2 hover:bg-red-600 cta-button">Comprar</button>
-            </div>
-          </details>
-        </div>
+    <!-- Snacks -->
+    <div>
+      <h3 class="text-lg font-semibold text-amber-800 mb-3 text-center">Snacks</h3>
+      <div class="flex flex-row gap-3 justify-center">
+
+        <!-- Papas fritas -->
+        <details class="group border rounded-xl bg-white hover:bg-gray-50 transition-all w-48">
+          <summary class="flex flex-col items-center p-3 cursor-pointer">
+            <a href="poner link del detalle del producto" target="_blank">
+              <img src="/version-con-tailwind/img/fries.png" alt="Papas fritas">
+            </a>
+            <p class="text-sm font-medium text-gray-800 mt-2">Papas fritas</p>
+            <p class="text-sm text-blue-500 font-semibold">$6.999</p>
+          </summary>
+        </details>
       </div>
-
     </div>
   </div>
+</div>
 
 </main>
 
@@ -157,7 +169,6 @@
                 <p class="text-amber-500 font-semibold mb-4">BURGERS</p>
                 <p class="text-sm text-gray-400">Sabor auténtico en cada hamburguesa. Hechas con ingredientes de calidad.</p>
             </div>
- 
             
             <div>
                 <h3 class="text-white font-bold mb-4">Contacto</h3>
@@ -168,7 +179,7 @@
                     <li>Lun-Dom: 11:00 - 23:00</li>
                 </ul>
             </div>
-               
+
             <div>
                 <h3 class="text-white font-bold mb-4">Legal</h3>
                 <ul class="space-y-2 text-sm">
