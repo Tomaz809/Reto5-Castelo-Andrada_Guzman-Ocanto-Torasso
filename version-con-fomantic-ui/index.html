@@ -1,11 +1,16 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tienda - Inicio</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="CSS/estilos.css">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/fomantic-ui@2/dist/semantic.min.css">
+
 </head>
+
 <body>
 
     <header class="main-header">
@@ -64,9 +69,85 @@
         </section>
     </main>
 
-    <footer class="main-footer">
-        <p>&copy; 2026 Nombre de la Tienda. Todos los derechos reservados.</p>
-    </footer>
+
+<footer class="ui inverted vertical segment footer-itec" style="margin: 0; padding: 3rem 1rem;">
+    
+    <div class="ui container">
+        
+        <!-- GRILLA: 3  -->
+        <div class="ui inverted stackable grid">
+            
+            <!-- COLUMNA 1 -->
+            <div class="five wide column">
+                <div class="logo-itec">ITEC</div>
+                <div class="logo-itec-subtitulo">BURGERS</div>
+                <div class="descripcion-itec">
+                    Sabor auténtico en cada hamburguesa. Hechas con ingredientes de calidad.
+                </div>
+            </div>
+
+            <!-- COLUMNA 2 -->
+            <div class="five wide column">
+                <h4 class="ui header">Contacto</h4>
+                <div class="ui relaxed list">
+                    <div class="item">
+                        <a href="#">+54 (358) 123-4567</a>
+                    </div>
+                    <div class="item">
+                        <a href="#">info@itecburgers.com</a>
+                    </div>
+                    <div class="item">
+                        Río Cuarto, Córdoba, Argentina
+                    </div>
+                    <div class="item">
+                        Lun-Dom: 11:00 - 23:00
+                    </div>
+                </div>
+            </div>
+
+            <!-- COLUMNA 3 -->
+            <div class="six wide column">
+                <h4 class="ui header">Legal</h4>
+                <div class="ui relaxed list">
+                    <div class="item">
+                        <a href="#privacidad">Política de Privacidad</a>
+                    </div>
+                    <div class="item">
+                        <a href="#terminos">Términos de Uso</a>
+                    </div>
+                    <div class="item">
+                        <a href="#cookies">Cookies</a>
+                    </div>
+                    <div class="item">
+                        <a href="#entregas">Info de Entregas</a>
+                    </div>
+                    <div class="item">
+                        <a href="#cambios">Cambios y Devoluciones</a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <!-- SEPARADOR -->
+        <div class="ui divider"></div>
+
+        <!-- COPYRIGHT -->
+        <div style="text-align: center;">
+            <p class="copyright-text">
+                &copy; 2026 ITEC BURGERS. Todos los derechos reservados.
+            </p>
+            <p class="copyright-subtext">
+                Desarrollado por estudiantes de ITEC Río Cuarto
+            </p>
+        </div>
+
+    </div>
+
+</footer>   
+
+<script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/fomantic-ui@2/dist/semantic.min.js"></script>
 
 </body>
 </html>
