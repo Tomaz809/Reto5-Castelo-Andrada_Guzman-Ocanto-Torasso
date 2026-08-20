@@ -56,3 +56,16 @@
     font-size: 0.75rem;
     margin-top: 0.25rem;
 }
+
+.ui.card .image {
+  text-align: center;   /* centra la imagen */
+  background: none;     /* elimina fondo gris */
+}
+
+/* Ajustar tamaño de las imágenes */
+.product-img {
+  max-width: 150px;     /* ancho fijo como en Tailwind */
+  height: auto;
+  margin: 0 auto;       /* centra horizontalmente */
+  display: block;
+}
