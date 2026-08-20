@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>iTec Burgers - Inicio</title>
+    
+    <!-- Fomantic UI -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/fomantic-ui@2/dist/semantic.min.css">
+    
+    <!-- CSS Propio -->
+    <link rel="stylesheet" href="CSS/estilos.css">
+</head>
+
+<body>
+
+    <!-- Header / Nav -->
+    <header class="ui inverted borderless top fixed menu custom-header">
+        <div class="ui container" style="display: flex; justify-content: space-between; align-items: center; width: 100%; max-width: 1127px;">
+            <a href="index.html" class="header item" style="padding: 0;">
+                <div class="logo-container flex" style="display: flex; align-items: center; justify-content: center;">
+                    <img src="img/logo.png" alt="Logo iTec Burgers" style="width: 100%; height: 100%; object-fit: cover;">
+                </div>
+                <h1 class="logo-text" style="margin: 0;">iTec Burgers</h1>
+            </a>
+            
+            <!-- Menú Desktop -->
+            <div class="right menu">
+                <a href="index.html" class="item" style="color: #f97316; font-weight: 600;">Inicio</a>
+                <a href="#productos" class="item" style="color: #d6d3d1; font-weight: 600;">Menú</a>
+                <a href="#contacto" class="item" style="color: #d6d3d1; font-weight: 600;">Contacto</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero-wrapper" style="margin-top: 96px;">
+        <div class="hero-glow"></div>
+        <div class="ui container" style="position: relative; z-index: 10;">
+            <h1>Bienvenidos a <span style="color: #f97316;">iTec Burgers</span></h1>
+            <p class="sub-hero">Las mejores hamburguesas y platos que vas a encontrar. Sabor auténtico en cada mordida.</p>
+            
+            <a href="#productos" class="ui massive button custom-cta">Ver nuestro Menú</a>
+            
+            <div class="hero-image-container">
+                <div class="hero-image-inner">
+                    <img src="img/sucursal.png" alt="Sucursal" style="width: 100%; height: 100%; object-fit: cover;">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Main Content -->
+    <main class="ui container" style="margin-bottom: 5rem;">
+        
+        <!-- Intro Text -->
+        <div class="ui container center aligned" style="margin-top: 3em; margin-bottom: 2em;">
+            <h1 class="ui inverted orange header" style="font-size: 2.5rem; margin-bottom: 1rem;">Explorá nuestro menú completo</h1>
+            <p style="font-size: 1.125rem; color: #d6d3d1; max-width: 56rem; margin: 0 auto;">Descubrí nuestra selección de hamburguesas, lomitos y snacks preparados con los mejores ingredientes y la máxima dedicación. ¡Elegí tu favorito!</p>
+        </div>
+
+        <div id="productos" class="catalog-container">
+            <h2 class="ui center aligned header catalog-title">Nuestro Catálogo</h2>
+
+            <!-- Hamburguesas -->
+            <h3 class="ui blue header center aligned" style="color:#60a5fa!important;">Hamburguesas</h3>
+            <div class="ui three stackable cards centered" style="margin-bottom: 3rem;">
+                
+                <div class="card">
+                    <div class="image">
+                        <a href="detalle-simple.html">
+                            <img class="product-img" src="img/simple.png" alt="Hamburguesa simple">
+                        </a>
+                    </div>
+                    <div class="content center aligned">
+                        <div class="header">Simple</div>
+                        <div class="meta" style="color: #3b82f6; font-weight: bold;">$15.499</div>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="image">
+                        <a href="detalle-doble.html">
+                            <img class="product-img" src="img/doble.png" alt="Hamburguesa doble">
+                        </a>
+                    </div>
+                    <div class="content center aligned">
+                        <div class="header">Doble</div>
+                        <div class="meta" style="color: #3b82f6; font-weight: bold;">$17.499</div>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="image">
+                        <a href="detalle-pollo.html">
+                            <img class="product-img" src="img/pollo.png" alt="Hamburguesa de pollo">
+                        </a>
+                    </div>
+                    <div class="content center aligned">
+                        <div class="header">Pollo</div>
+                        <div class="meta" style="color: #3b82f6; font-weight: bold;">$19.499</div>
+                    </div>
+                </div>
+                
+            </div>
+
+            <!-- Lomitos -->
+            <h3 class="ui green header center aligned" style="color:#4ade80!important;">Lomitos</h3>
+            <div class="ui four stackable cards centered" style="margin-bottom: 3rem;">
+                
+                <div class="card">
+                    <div class="image">
+                        <a href="detalle-lomito-clasico.html">
+                            <img class="product-img" src="img/l_clasico.png" alt="Lomito clásico">
+                        </a>
+                    </div>
+                    <div class="content center aligned">
+                        <div class="header">Clásico</div>
+                        <div class="meta" style="color: #3b82f6; font-weight: bold;">$19.999</div>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="image">
+                        <a href="detalle-lomito-clasicopollo.html">
+                            <img class="product-img" src="img/l_clasicopollo.png" alt="Lomito clásico pollo">
+                        </a>
+                    </div>
+                    <div class="content center aligned">
+                        <div class="header">Clásico Pollo</div>
+                        <div class="meta" style="color: #3b82f6; font-weight: bold;">$20.499</div>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="image">
+                        <a href="detalle-lomito-completo.html">
+                            <img class="product-img" src="img/l_completo.png" alt="Lomito completo">
+                        </a>
+                    </div>
+                    <div class="content center aligned">
+                        <div class="header">Completo</div>
+                        <div class="meta" style="color: #3b82f6; font-weight: bold;">$21.499</div>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="image">
+                        <a href="detalle-lomito-simple.html">
+                            <img class="product-img" src="img/l_simple.png" alt="Lomito simple">
+                        </a>
+                    </div>
+                    <div class="content center aligned">
+                        <div class="header">Simple</div>
+                        <div class="meta" style="color: #3b82f6; font-weight: bold;">$17.999</div>
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- Snacks -->
+            <h3 class="ui orange header center aligned" style="color:#fb923c!important;">Snacks</h3>
+            <div class="ui three stackable cards centered">
+                
+                <div class="card">
+                    <div class="image">
+                        <a href="detalle-aros.html">
+                            <img class="product-img" src="img/a_cebolla.png" alt="Aros de cebolla">
+                        </a>
+                    </div>
+                    <div class="content center aligned">
+                        <div class="header">Aros de cebolla</div>
+                        <div class="meta" style="color: #3b82f6; font-weight: bold;">$7.499</div>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="image">
+                        <a href="detalle-nuggets.html">
+                            <img class="product-img" src="img/nuggets.png" alt="Nuggets">
+                        </a>
+                    </div>
+                    <div class="content center aligned">
+                        <div class="header">Nuggets</div>
+                        <div class="meta" style="color: #3b82f6; font-weight: bold;">$8.999</div>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="image">
+                        <a href="detalle-papas.html">
+                            <img class="product-img" src="img/papas.png" alt="Papas fritas">
+                        </a>
+                    </div>
+                    <div class="content center aligned">
+                        <div class="header">Papas fritas</div>
+                        <div class="meta" style="color: #3b82f6; font-weight: bold;">$6.999</div>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+
+    </main>
+
+    <!-- Footer -->
+    <footer id="contacto" class="ui inverted vertical segment footer-itec" style="margin: 0; padding: 3rem 1rem;">
+        <div class="ui container">
+            <div class="ui inverted stackable grid">
+                
+                <div class="five wide column">
+                    <div class="logo-itec">ITEC</div>
+                    <div class="logo-itec-subtitulo">BURGERS</div>
+                    <div class="descripcion-itec">
+                        Sabor auténtico en cada hamburguesa. Hechas con ingredientes de calidad.
+                    </div>
+                </div>
+
+                <div class="five wide column">
+                    <h4 class="ui inverted header">Contacto</h4>
+                    <div class="ui inverted link list">
+                        <a href="#" class="item">+54 (358) 123-4567</a>
+                        <a href="#" class="item">info@itecburgers.com</a>
+                        <div class="item">Río Cuarto, Córdoba, Argentina</div>
+                        <div class="item">Lun-Dom: 11:00 - 23:00</div>
+                    </div>
+                </div>
+
+                <div class="six wide column">
+                    <h4 class="ui inverted header">Legal</h4>
+                    <div class="ui inverted link list">
+                        <a href="#privacidad" class="item">Política de Privacidad</a>
+                        <a href="#terminos" class="item">Términos de Uso</a>
+                        <a href="#cookies" class="item">Cookies</a>
+                        <a href="#entregas" class="item">Info de Entregas</a>
+                        <a href="#cambios" class="item">Cambios y Devoluciones</a>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="ui divider"></div>
+
+            <div style="text-align: center;">
+                <p class="copyright-text">
+                    &copy; 2026 iTec Burgers. Todos los derechos reservados.
+                </p>
+                <p class="copyright-subtext">
+                    Desarrollado por estudiantes de ITEC Río Cuarto
+                </p>
+            </div>
+        </div>
+    </footer>   
+
+    
+
+</body>
+</html>

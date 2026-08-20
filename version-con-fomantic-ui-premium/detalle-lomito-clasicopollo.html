@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>iTec Burgers - Lomito Clásico Pollo</title>
+    
+    <!-- Fomantic UI -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/fomantic-ui@2/dist/semantic.min.css">
+    
+    <!-- CSS Propio -->
+    <link rel="stylesheet" href="CSS/estilos.css">
+</head>
+<body>
+
+    <!-- Header / Nav -->
+    <header class="ui inverted borderless top fixed menu custom-header">
+        <div class="ui container" style="display: flex; justify-content: space-between; align-items: center; width: 100%; max-width: 1127px;">
+            <a href="index.html" class="header item" style="padding: 0;">
+                <div class="logo-container flex" style="display: flex; align-items: center; justify-content: center;">
+                    <img src="img/logo.png" alt="Logo iTec Burgers" style="width: 100%; height: 100%; object-fit: cover;">
+                </div>
+                <h1 class="logo-text" style="margin: 0;">iTec Burgers</h1>
+            </a>
+            
+            <div class="right menu">
+                <a href="index.html" class="item" style="color: #f97316; font-weight: 600;">Inicio</a>
+                <a href="index.html#productos" class="item" style="color: #d6d3d1; font-weight: 600;">Menú</a>
+            </div>
+        </div>
+    </header>
+
+    <main class="ui container" style="margin-top: 120px; margin-bottom: 5rem; min-height: 70vh;">
+        
+        <div class="ui segment detail-container">
+            <div class="ui stackable two column grid" style="margin: 0;">
+                
+                <!-- Imagen -->
+                <div class="column detail-img-col">
+                    <img src="img/l_clasicopollo.png" alt="Lomito Clásico Pollo" class="detail-img">
+                </div>
+
+                <!-- Contenido -->
+                <div class="column detail-content-col">
+                    <h1 class="ui inverted header" style="font-size: 2.5rem; margin-bottom: 0.5rem;">Lomito Clásico Pollo</h1>
+                    <div style="font-size: 2rem; color: #f97316; font-weight: bold; margin-bottom: 1.5rem;">$20.499</div>
+                    <p style="font-size: 1.125rem; color: #a8a29e; margin-bottom: 2rem; line-height: 1.6;">Pechuga a la plancha, lechuga, tomate, jamón y queso.</p>
+
+                    <h3 class="ui dividing inverted header">Personalizá tu pedido</h3>
+                    
+                    <div class="ui inverted form" style="margin-bottom: 2rem;">
+                        <div class="grouped fields">
+                            <label style="color: #d6d3d1;">Extras</label>
+                            <div class="field">
+                                <div class="ui checkbox" style="display: flex; justify-content: space-between; width: 100%;">
+                                    <input type="checkbox" name="queso">
+                                    <label style="color: #a8a29e !important;">Extra Queso</label>
+                                    <span style="color: #f97316;">+$1.000</span>
+                                </div>
+                            </div>
+                            <div class="field" style="margin-top: 1rem;">
+                                <div class="ui checkbox" style="display: flex; justify-content: space-between; width: 100%;">
+                                    <input type="checkbox" name="bacon">
+                                    <label style="color: #a8a29e !important;">Bacon Crocante</label>
+                                    <span style="color: #f97316;">+$1.500</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div style="display: flex; gap: 1rem;">
+                        <button class="ui orange massive button custom-cta" style="flex: 1; margin-top: 0 !important;">Comprar Ahora</button>
+                        <a href="index.html#productos" class="ui massive button" style="background-color: #44403c; color: white;">Volver</a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="ui inverted vertical segment footer-itec" style="margin: 0; padding: 3rem 1rem;">
+        <div class="ui container">
+            <div class="ui divider" style="border-top-color: transparent;"></div>
+            <div style="text-align: center;">
+                <p class="copyright-text">
+                    &copy; 2026 iTec Burgers. Todos los derechos reservados.
+                </p>
+                <p class="copyright-subtext">
+                    Desarrollado por estudiantes de ITEC Río Cuarto
+                </p>
+            </div>
+        </div>
+    </footer>   
+
+    
+</body>
+</html>

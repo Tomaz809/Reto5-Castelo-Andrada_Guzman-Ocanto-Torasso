@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>iTec Burgers - Hamburguesa de Pollo</title>
+    
+    <!-- Fomantic UI -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/fomantic-ui@2/dist/semantic.min.css">
+    
+    <!-- CSS Propio -->
+    <link rel="stylesheet" href="CSS/estilos.css">
+</head>
+<body class="pushable">
+
+    <!-- Header / Nav -->
+    <div class="ui inverted menu">
+        <div class="ui container">
+            <a href="index.html" class="header item">
+                <img class="ui mini circular image" src="img/logo.png" style="margin-right: 1.5em;">
+                iTec Burgers
+            </a>
+            <div class="right menu">
+                <a href="index.html" class="item">Inicio</a>
+                <a href="index.html#productos" class="item">Menú</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Main Content -->
+    <div class="ui vertical stripe segment">
+        <div class="ui container">
+            
+            <div class="ui stackable two column grid">
+                
+                <!-- Imagen -->
+                <div class="column center aligned">
+                    <img src="img/pollo.png" alt="Hamburguesa de Pollo" class="ui large rounded bordered image">
+                </div>
+
+                <!-- Contenido -->
+                <div class="column">
+                    <h1 class="ui header">
+                        Hamburguesa de Pollo
+                        <div class="sub header ui orange text">$19.499</div>
+                    </h1>
+                    
+                    <p class="ui large text">Pechuga crispy, lechuga repollada y mayonesa al ajo.</p>
+
+                    <h3 class="ui dividing header">Personalizá tu pedido</h3>
+                    
+                    <div class="ui form">
+                        <div class="grouped fields">
+                            <label>Extras</label>
+                            <div class="field">
+                                <div class="ui checkbox">
+                                    <input type="checkbox" name="queso">
+                                    <label>Extra Queso <span class="ui orange text">(+$1.000)</span></label>
+                                </div>
+                            </div>
+                            <div class="field">
+                                <div class="ui checkbox">
+                                    <input type="checkbox" name="bacon">
+                                    <label>Bacon Crocante <span class="ui orange text">(+$1.500)</span></label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="ui hidden divider"></div>
+
+                    <div class="ui fluid buttons">
+                        <button class="ui orange button">Comprar Ahora</button>
+                        <div class="or" data-text="o"></div>
+                        <a href="index.html#productos" class="ui button">Volver al Menú</a>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <div id="contacto" class="ui inverted vertical footer segment">
+        <div class="ui container">
+            <div class="ui stackable inverted divided equal height stackable grid">
+                
+                <div class="three wide column">
+                    <h4 class="ui inverted header">ITEC BURGERS</h4>
+                    <p>Sabor auténtico en cada hamburguesa. Hechas con ingredientes de calidad.</p>
+                </div>
+
+                <div class="three wide column">
+                    <h4 class="ui inverted header">Contacto</h4>
+                    <div class="ui inverted link list">
+                        <a href="#" class="item">+54 (358) 123-4567</a>
+                        <a href="#" class="item">info@itecburgers.com</a>
+                        <span class="item">Río Cuarto, Córdoba</span>
+                    </div>
+                </div>
+
+                <div class="seven wide column">
+                    <h4 class="ui inverted header">Legal</h4>
+                    <div class="ui inverted link list">
+                        <a href="#" class="item">Política de Privacidad</a>
+                        <a href="#" class="item">Términos de Uso</a>
+                        <a href="#" class="item">Cookies</a>
+                    </div>
+                    <p>&copy; 2026 iTec Burgers. Todos los derechos reservados.</p>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    
+</body>
+</html>
